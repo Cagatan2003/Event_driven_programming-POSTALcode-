@@ -32,13 +32,13 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/event-driven-programming-midtermexam/index.php">Dashboard</a>
+                        <a class="nav-link" href="/event-driven-prog/index.php">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/event-driven-programming-midtermexam/registration.php">Registration</a>
+                        <a class="nav-link" href="/event-driven-prog/registration.php">Registration</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/event-driven-programming-midtermexam/postalcode.php">Postal Code</a>
+                        <a class="nav-link" href="/event-driven-prog/postalcode.php">Postal Code</a>
                     </li>
                 </ul>
             </div>
@@ -49,21 +49,21 @@
         <p class="h2 mt-3">Postal Code Registration</p>
         <p>You can additonal record for student here.</p>
         <div class="card mt-3">
-            <form action="/event-driven-programming-midtermexam/models/save.php" method="POST">
+            <form action="/event-driven-prog/models/save_postalcode.php" method="POST">
                 <div class="card-header">Registration Form</div>
                 <div class="card-body">
                     <?php
                     if (isset($_GET['success'])) {
                     ?>
                         <div class="alert alert-success">
-                            <b>New Student Added.</b>. Congrats. Thank you!
+                            <b>New Postal Code Added.</b>. Congrats. Thank you!
                         </div>
                         <hr>
                     <?php
                     } elseif (isset($_GET['invalid'])) {
                     ?>
                         <div class="alert alert-danger">
-                            <b>Existed Application ID</b>. Please try another. Thank you.
+                            <b>Existed Postal Code ID</b>. Please try another. Thank you.
                         </div>
                         <hr>
                     <?php
@@ -168,7 +168,7 @@ if(isset($_POST['citymun_id'])) {
                     <div class="card-footer">
                         <span style="float: right">
                             <button class="btn-success">
-                                Add New Student
+                                Add New Postal Code
                             </button>
                         </span>
                     </div>

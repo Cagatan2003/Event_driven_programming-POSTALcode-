@@ -26,7 +26,7 @@ function save($data)
 
     try {
         if ($conn->query($query) === TRUE) {
-            header('location: /event-driven-programming-midtermexam/registration.php?success');
+            header('location: /event-driven-program/registration.php?success');
             exit(); 
         } 
     

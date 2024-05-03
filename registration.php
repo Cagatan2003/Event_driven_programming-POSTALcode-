@@ -32,13 +32,13 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/event-driven-programming-midtermexam/index.php">Dashboard</a>
+                        <a class="nav-link" href="/event-driven-prog/index.php">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/event-driven-programming-midtermexam/registration.php">Registration</a>
+                        <a class="nav-link" href="/event-driven-prog/registration.php">Registration</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/event-driven-programming-midtermexam/postalcode.php">Postal Code</a>
+                        <a class="nav-link" href="/event-driven-prog/postalcode.php">Postal Code</a>
                     </li>
                 </ul>
             </div>
@@ -50,7 +50,7 @@
         <p>You can add record for student here.</p>
         <div class="card mt-3">
 
-            <form action="/event-driven-programming-midtermexam/models/save.php" method="POST">
+            <form action="/event-driven-prog/models/save.php" method="POST">
                 <div class="card-header">Registration Form</div>
                 <div class="card-body">
                     <?php

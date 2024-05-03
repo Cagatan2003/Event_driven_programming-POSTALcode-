@@ -29,16 +29,16 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" mynavbar">
+            <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="./">Dashboard</a>
+                        <a class="nav-link" href="/event-driven-prog/index.php">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./registration.php">Registration</a>
+                        <a class="nav-link" href="/event-driven-prog/registration.php">Registration</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/event-driven-programming-midtermexam/postalcode.php">Postal Code</a>
+                        <a class="nav-link" href="/event-driven-prog/postalcode.php">Postal Code</a>
                     </li>
                 </ul>
                 <form class="d-flex">
