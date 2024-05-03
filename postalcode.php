@@ -117,7 +117,7 @@
                         <div class="col-md-12">
 
                             <label>CITY / MUNICIPALITY : <b class="text-danger">*</b></label>
-                            <select name="inp_province" id="inp_citymun" onchange="display_brgy(this.value)" required class="form-control mt-2">
+                            <select name="inp_citymun" id="inp_citymun" onchange="display_brgy(this.value)" required class="form-control mt-2">
                                 <option value="" disabled selected>-- SELECT CITY / MUNICIPALITY --</option>
                             </select>
                         </div>
@@ -159,11 +159,10 @@ if(isset($_POST['citymun_id'])) {
 ?>
 
                     <div class="col-md-12">
-
-                        <label>POSTAL CODEg: <b class="text-danger">*</b></label>
-                       <input type="number" name="inp_postalcode" class="form-control" placeholder="Postal  Code here">
+                            <label>POSTAL CODE: <b class="text-danger">*</b></label>
+                            <input type="number" name="inp_postalcode" class="form-control" placeholder="Postal Code here">
+                        </div>
                     </div>
-
 
                     <div class="card-footer">
                         <span style="float: right">
@@ -209,19 +208,6 @@ if(isset($_POST['citymun_id'])) {
         });
     }
 
-    function display_brgy(citymunCode) {
-        $.ajax({
-            url: './models/ph-address.php',
-            type: 'POST',
-            data: {
-                'type': 'citymun',
-                'post_code': citymunCode
-            },
-            success: function(response) {
-                $('#inp_brgy').html(response);
-            }
-        });
-    }
 </script>
 
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2024 at 01:53 AM
+-- Generation Time: May 03, 2024 at 12:01 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -43791,6 +43791,42 @@ INSERT INTO `ph_citymun` (`id`, `psgcCode`, `citymunDesc`, `regDesc`, `provCode`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `ph_postalcode`
+--
+
+CREATE TABLE `ph_postalcode` (
+  `postal_id` int(11) NOT NULL,
+  `postal_regCode` int(15) NOT NULL,
+  `postal_provCode` int(15) NOT NULL,
+  `postal_citymunCode` int(15) NOT NULL,
+  `postal_code` int(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `ph_postalcode`
+--
+
+INSERT INTO `ph_postalcode` (`postal_id`, `postal_regCode`, `postal_provCode`, `postal_citymunCode`, `postal_code`) VALUES
+(1, 2, 209, 20901, 3900),
+(28, 2, 209, 20902, 3905),
+(29, 2, 209, 20903, 3902),
+(30, 2, 209, 20904, 3901),
+(31, 2, 209, 20905, 3904),
+(32, 2, 209, 20905, 3903),
+(33, 2, 209, 20906, 3517),
+(34, 2, 215, 21501, 3507),
+(35, 2, 215, 21502, 3517),
+(36, 2, 215, 21503, 3523),
+(37, 2, 215, 21504, 3505),
+(38, 2, 215, 21505, 3515),
+(39, 2, 215, 21506, 3506),
+(40, 2, 215, 21506, 3516),
+(41, 2, 215, 21508, 3511),
+(42, 2, 215, 21509, 3520);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `ph_province`
 --
 
@@ -43979,6 +44015,12 @@ ALTER TABLE `ph_citymun`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `ph_postalcode`
+--
+ALTER TABLE `ph_postalcode`
+  ADD PRIMARY KEY (`postal_id`);
+
+--
 -- Indexes for table `ph_province`
 --
 ALTER TABLE `ph_province`
@@ -44011,6 +44053,12 @@ ALTER TABLE `ph_brgy`
 --
 ALTER TABLE `ph_citymun`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1648;
+
+--
+-- AUTO_INCREMENT for table `ph_postalcode`
+--
+ALTER TABLE `ph_postalcode`
+  MODIFY `postal_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `ph_province`
